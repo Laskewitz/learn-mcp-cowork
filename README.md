@@ -1,4 +1,4 @@
-# learn-mcp-cowork
+# learn-for-cowork
 
 A [Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-manage-plugins) plugin that connects to the [Microsoft Learn MCP Server](https://learn.microsoft.com/en-us/training/support/mcp).
 
@@ -19,7 +19,7 @@ A [Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork
 ## Packaging
 
 ```powershell
-Compress-Archive -Path manifest.json, color.png, outline.png -DestinationPath learn-mcp-cowork.zip -Force
+Compress-Archive -Path manifest.json, color.png, outline.png -DestinationPath learn-for-cowork.zip -Force
 ```
 
 Or with a npm script:
