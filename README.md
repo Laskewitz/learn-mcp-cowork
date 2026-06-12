@@ -1,6 +1,6 @@
-# 📚 learn-for-cowork
+# 📚 Learn for Copilot Cowork
 
-A [Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-manage-plugins) plugin that connects to the [Microsoft Learn MCP Server](https://learn.microsoft.com/en-us/training/support/mcp).
+A [Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork-manage-plugins) plugin that connects to the [Microsoft Learn MCP Server](https://learn.microsoft.com/en-us/training/support/mcp) and includes a research skill for deep-diving into Microsoft documentation.
 
 ## 🧠 About the Microsoft Learn MCP Server
 
@@ -14,11 +14,41 @@ The [Microsoft Learn MCP Server](https://learn.microsoft.com/en-us/training/supp
 
 The server is powered by the same knowledge service behind [Ask Learn](https://learn.microsoft.com) and Copilot for Azure. Content refreshes incrementally after updates, with a full refresh once daily.
 
+## 🎯 Included Skills
+
+### 📊 Learn Deck
+
+Creates a PowerPoint presentation on a Microsoft technology topic:
+
+1. **Topic Selection** — Asks what you'd like a deck about and for whom
+2. **Research** — Performs multiple searches across Learn documentation
+3. **Structure** — Organizes findings into a logical slide flow
+4. **Create** — Generates a polished PowerPoint with speaker notes and source links
+
+### 📝 Learn One-Pager
+
+Creates a concise Word one-pager on a Microsoft technology topic:
+
+1. **Topic Selection** — Asks what you'd like a one-pager about and the audience
+2. **Research** — Performs multiple searches for comprehensive coverage
+3. **Structure** — Distills findings into a scannable one-page format
+4. **Create** — Generates a professional Word document with clear formatting
+
+> 💡 Both skills are designed to do **multiple calls** to the Learn MCP Server, ensuring thorough research rather than surface-level results.
+
 ## 📦 What's included
 
-- **manifest.json** — M365 Unified App Manifest (v1.28) declaring the Learn MCP connector
-- **color.png** — 192×192 full-color app icon
-- **outline.png** — 32×32 outline icon
+```
+learn-for-cowork.zip
+├── manifest.json
+├── color.png (192×192)
+├── outline.png (32×32)
+└── skills/
+    ├── learn-deck/
+    │   └── SKILL.md
+    └── learn-onepager/
+        └── SKILL.md
+```
 
 ## ⚙️ Plugin details
 
@@ -31,7 +61,7 @@ The server is powered by the same knowledge service behind [Ask Learn](https://l
 ## 🏗️ Packaging
 
 ```powershell
-Compress-Archive -Path manifest.json, color.png, outline.png -DestinationPath learn-for-cowork.zip -Force
+Compress-Archive -Path manifest.json, color.png, outline.png, skills -DestinationPath learn-for-cowork.zip -Force
 ```
 
 Or with a npm script:

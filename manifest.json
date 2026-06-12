@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/en/json-schemas/teams/vDevPreview/MicrosoftTeams.schema.json",
   "manifestVersion": "devPreview",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
   "name": {
     "short": "Microsoft Learn for Cowork",
@@ -18,10 +18,14 @@
   "accentColor": "#2B579A",
   "developer": {
     "name": "Daniel Laskewitz",
-    "websiteUrl": "https://github.com/Laskewitz/learn-mcp-cowork",
+    "websiteUrl": "https://github.com/Laskewitz/learn-for-cowork",
     "privacyUrl": "https://privacy.microsoft.com/privacystatement",
     "termsOfUseUrl": "https://learn.microsoft.com/legal/termsofuse"
   },
+  "agentSkills": [
+    { "folder": "./skills/learn-deck" },
+    { "folder": "./skills/learn-onepager" }
+  ],
   "agentConnectors": [
     {
       "id": "microsoft-learn",

@@ -1,10 +1,10 @@
 {
   "name": "learn-for-cowork",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "A Cowork plugin that connects to the Microsoft Learn MCP Server.",
   "scripts": {
-    "package": "pwsh -Command \"Compress-Archive -Path manifest.json, color.png, outline.png -DestinationPath learn-for-cowork.zip -Force\""
+    "package": "pwsh -Command \"Compress-Archive -Path manifest.json, color.png, outline.png, skills -DestinationPath learn-for-cowork.zip -Force\""
   },
   "repository": {
     "type": "git",
