@@ -27,10 +27,10 @@
       "id": "microsoft-learn",
       "displayName": "Microsoft Learn MCP Server",
       "description": "Remote MCP server providing tools to search Microsoft Learn documentation and code samples.",
-      "mcpToolDescription": "Use this connector to search Microsoft Learn documentation, fetch articles, and find code samples from official Microsoft docs.",
       "toolSource": {
         "remoteMcpServer": {
           "mcpServerUrl": "https://learn.microsoft.com/api/mcp",
+          "mcpToolDescription": "Use this connector to search Microsoft Learn documentation, fetch articles, and find code samples from official Microsoft docs.",
           "authorization": {
             "type": "None"
           }
