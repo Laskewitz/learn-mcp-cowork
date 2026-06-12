@@ -33,16 +33,16 @@ Ask the user what topic they want a one-pager on. Help them scope it:
 
 ### Step 2: Research the Topic
 
-Use the `microsoft-learn` connector to thoroughly research the topic. Perform **multiple searches** to gather comprehensive information:
+Use the `microsoft-learn` connector's `search` and `get_page` tools to thoroughly research the topic. Perform **multiple tool calls** to gather comprehensive information:
 
-- Search for the main topic overview and description
-- Search for key benefits and value proposition
-- Search for technical details and how it works
-- Look for requirements and prerequisites
-- Search for pricing or licensing information if relevant
-- Look for common use cases and customer scenarios
+- Call `search` for the main topic overview and description
+- Call `search` for key benefits and value proposition
+- Call `search` for technical details and how it works
+- Call `search` for requirements and prerequisites
+- Call `search` for pricing or licensing information if relevant
+- Call `get_page` on the most relevant results to fetch full article content
 
-**Important:** Perform at least 3-5 searches to ensure thorough coverage. Each search should explore a different angle.
+**Important:** Perform at least 3-5 `search` calls to ensure thorough coverage. Each call should explore a different angle. Follow up with `get_page` on the top results.
 
 ### Step 3: Structure the One-Pager
 
@@ -58,7 +58,7 @@ Organize your research into a clear one-page format:
 
 ### Step 4: Create the Document
 
-Use the Word document skill to generate a polished one-pager with:
+Use the `docx` skill to generate a polished one-pager with:
 
 - Professional formatting with clear headings
 - Concise content that fits on a single page

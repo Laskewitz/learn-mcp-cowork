@@ -32,16 +32,16 @@ Ask the user what topic they want a presentation on. Help them narrow it down:
 
 ### Step 2: Research the Topic
 
-Use the `microsoft-learn` connector to thoroughly research the topic. Perform **multiple searches** to gather comprehensive information:
+Use the `microsoft-learn` connector's `search` and `get_page` tools to thoroughly research the topic. Perform **multiple tool calls** to gather comprehensive information:
 
-- Search for the main topic overview
-- Search for key features and capabilities
-- Search for architecture or how it works
-- Look for code samples and practical examples
-- Search for best practices and common patterns
-- Look for getting started guides and prerequisites
+- Call `search` for the main topic overview
+- Call `search` for key features and capabilities
+- Call `search` for architecture or how it works
+- Call `search` for code samples and practical examples
+- Call `search` for best practices and common patterns
+- Call `get_page` on the most relevant results to fetch full article content
 
-**Important:** Perform at least 3-5 searches to ensure thorough coverage. Each search should explore a different angle.
+**Important:** Perform at least 3-5 `search` calls to ensure thorough coverage. Each call should explore a different angle. Follow up with `get_page` on the top results.
 
 ### Step 3: Structure the Presentation
 
@@ -58,7 +58,7 @@ Organize your research into a logical slide structure:
 
 ### Step 4: Create the Deck
 
-Use the PowerPoint skill to generate the presentation with:
+Use the `pptx` skill to generate the presentation with:
 
 - Clear, concise bullet points (not walls of text)
 - One key idea per slide
