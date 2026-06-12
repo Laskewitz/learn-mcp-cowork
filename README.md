@@ -19,7 +19,13 @@ A [Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/cowork
 ## Packaging
 
 ```powershell
-Compress-Archive -Path manifest.json, color.png, outline.png -DestinationPath learn-mcp-cowork.zip
+Compress-Archive -Path manifest.json, color.png, outline.png -DestinationPath learn-mcp-cowork.zip -Force
+```
+
+Or with a npm script:
+
+```bash
+npm run package
 ```
 
 ## Sideloading

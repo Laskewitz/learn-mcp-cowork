@@ -1,0 +1,18 @@
+{
+  "name": "learn-mcp-cowork",
+  "version": "1.0.0",
+  "description": "A Cowork plugin that connects to the Microsoft Learn MCP Server.",
+  "scripts": {
+    "package": "pwsh -Command \"Compress-Archive -Path manifest.json, color.png, outline.png -DestinationPath learn-mcp-cowork.zip -Force\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laskewitz/learn-mcp-cowork.git"
+  },
+  "author": "Daniel Laskewitz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Laskewitz/learn-mcp-cowork/issues"
+  },
+  "homepage": "https://github.com/Laskewitz/learn-mcp-cowork#readme"
+}
