@@ -30,6 +30,8 @@ npm run package
 
 ## Sideloading
 
-1. Go to **M365 Admin Center** > **Manage Apps** > **Upload custom app**
-2. Upload the `.zip` package
-3. The plugin will appear in Cowork's **Sources & Skills** panel
+1. Go to **Microsoft 365 Admin Center** > **Agents** > **All agents**
+2. Click the **...** (more options) menu
+3. Select **+ Add agent**
+4. Upload the `.zip` package
+5. The plugin will appear in Cowork's **Sources & Skills** panel
